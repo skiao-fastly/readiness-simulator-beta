@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    image: readiness-simulator
+    build: .
+    container_name: readiness-simulator
+    restart: always
+    ports:
+      - "8505:8501"
